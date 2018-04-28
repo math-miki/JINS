@@ -26,6 +26,7 @@ class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
     @IBOutlet weak var eyeMoveLeft: UILabel!
     @IBOutlet weak var eyeMoveRight: UILabel!
     
+    @IBOutlet weak var url_s: UILabel!
     @IBOutlet weak var blinkStrength: UILabel!
     @IBOutlet weak var blinkSpeed: UILabel!
     
@@ -41,6 +42,7 @@ class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        url_s.text = url
         url_field.placeholder = "URLを入力"
         url_field.clearButtonMode = .always
         url_field.returnKeyType = .done
@@ -71,6 +73,7 @@ class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
 
     @IBAction func submit(_ sender: Any) {
         url = url_field.text!
+        url_s.text = url
         manager = SocketManager(socketURL: URL(string: url)!, config: [.log(true), .compress])
         socket = manager.defaultSocket
         url_field.endEditing(true)
@@ -88,7 +91,9 @@ class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
                 sensor_data[k] = v
             }
         }
+        
         socket.emit("data", sensor_data)
+        
         socket.connect()
         accX.text = "accX: " + sensor_data["accX"]!
         accY.text = "accY: " + sensor_data["accY"]!
@@ -112,6 +117,7 @@ class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
         
         
     }
+    
     func checkMEMEStatus(_ status:MEMEStatus) {
         
         if status == MEME_ERROR_APP_AUTH {
