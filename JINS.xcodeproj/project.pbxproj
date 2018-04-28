@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB7DF0C379E464AE2EAAD65 /* Pods_JINSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3E3AF08702C5B65170DAC8 /* Pods_JINSTests.framework */; };
 		3C904B182090798E005A366A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C904B172090798E005A366A /* AppDelegate.swift */; };
 		3C904B1A2090798E005A366A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C904B192090798E005A366A /* ViewController.swift */; };
 		3C904B1D2090798E005A366A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C904B1B2090798E005A366A /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		3C904B3B20907990005A366A /* JINSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C904B3A20907990005A366A /* JINSUITests.swift */; };
 		3C904B4A20907A4C005A366A /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C904B4820907A1C005A366A /* MEMELib.framework */; };
 		3C904B4B20907A4C005A366A /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C904B4820907A1C005A366A /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C0056C7C53D225993D609B7 /* Pods_JINSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0435A177C5F5DA8F114E3023 /* Pods_JINSUITests.framework */; };
+		D37823C15F23B886C216E68A /* Pods_JINS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F467AA0CF7E9EF569504678A /* Pods_JINS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0435A177C5F5DA8F114E3023 /* Pods_JINSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JINSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145FBA37DBE10EE0A7FF48A5 /* Pods-JINS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JINS/Pods-JINS.debug.xcconfig"; sourceTree = "<group>"; };
+		150848FDBCBAC6E46624019E /* Pods-JINSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JINSTests/Pods-JINSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C904B142090798E005A366A /* JINS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C904B172090798E005A366A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C904B192090798E005A366A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,12 @@
 		3C904B3C20907990005A366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C904B4820907A1C005A366A /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
 		3C904B4D20907AAC005A366A /* jins_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jins_test.h; sourceTree = "<group>"; };
+		3F138AE63FB1C78C28AA5D00 /* Pods-JINSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JINSUITests/Pods-JINSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A97D0AC4EFBCE089756FF0F4 /* Pods-JINSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JINSTests/Pods-JINSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B18D243B893065313BAFCBA6 /* Pods-JINS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JINS/Pods-JINS.release.xcconfig"; sourceTree = "<group>"; };
+		CB3E3AF08702C5B65170DAC8 /* Pods_JINSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JINSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E023405D6DBD7AE95F699193 /* Pods-JINSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JINSUITests/Pods-JINSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F467AA0CF7E9EF569504678A /* Pods_JINS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JINS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C904B4A20907A4C005A366A /* MEMELib.framework in Frameworks */,
+				D37823C15F23B886C216E68A /* Pods_JINS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB7DF0C379E464AE2EAAD65 /* Pods_JINSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0056C7C53D225993D609B7 /* Pods_JINSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,9 @@
 		2BFB4564CA1EA09E7427C28D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F467AA0CF7E9EF569504678A /* Pods_JINS.framework */,
+				CB3E3AF08702C5B65170DAC8 /* Pods_JINSTests.framework */,
+				0435A177C5F5DA8F114E3023 /* Pods_JINSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 				3C904B3920907990005A366A /* JINSUITests */,
 				3C904B152090798E005A366A /* Products */,
 				2BFB4564CA1EA09E7427C28D /* Frameworks */,
+				EEE8662C3BB4F9228B8C2026 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,9 +146,9 @@
 		3C904B162090798E005A366A /* JINS */ = {
 			isa = PBXGroup;
 			children = (
-				3C904B192090798E005A366A /* ViewController.swift */,
 				3C904B172090798E005A366A /* AppDelegate.swift */,
 				3C904B1B2090798E005A366A /* Main.storyboard */,
+				3C904B192090798E005A366A /* ViewController.swift */,
 				3C904B2120907990005A366A /* Assets.xcassets */,
 				3C904B2320907990005A366A /* LaunchScreen.storyboard */,
 				3C904B2620907990005A366A /* Info.plist */,
@@ -157,6 +176,19 @@
 			path = JINSUITests;
 			sourceTree = "<group>";
 		};
+		EEE8662C3BB4F9228B8C2026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				145FBA37DBE10EE0A7FF48A5 /* Pods-JINS.debug.xcconfig */,
+				B18D243B893065313BAFCBA6 /* Pods-JINS.release.xcconfig */,
+				A97D0AC4EFBCE089756FF0F4 /* Pods-JINSTests.debug.xcconfig */,
+				150848FDBCBAC6E46624019E /* Pods-JINSTests.release.xcconfig */,
+				E023405D6DBD7AE95F699193 /* Pods-JINSUITests.debug.xcconfig */,
+				3F138AE63FB1C78C28AA5D00 /* Pods-JINSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,10 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C904B3F20907990005A366A /* Build configuration list for PBXNativeTarget "JINS" */;
 			buildPhases = (
+				5FE6684B81FCFCBC35E5E9A7 /* [CP] Check Pods Manifest.lock */,
 				3C904B102090798E005A366A /* Sources */,
 				3C904B112090798E005A366A /* Frameworks */,
 				3C904B122090798E005A366A /* Resources */,
 				3C904B4C20907A4C005A366A /* Embed Frameworks */,
+				E4D78A12E11C989E429E3CC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +344,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5FE6684B81FCFCBC35E5E9A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JINS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D34AED2820D44EF70296BFB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +378,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D78A12E11C989E429E3CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JINS/Pods-JINS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JINS/Pods-JINS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,6 +580,7 @@
 		};
 		3C904B4020907990005A366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145FBA37DBE10EE0A7FF48A5 /* Pods-JINS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,10 +591,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = JINS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = JINS/jins_test.h;
@@ -532,6 +602,7 @@
 		};
 		3C904B4120907990005A366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18D243B893065313BAFCBA6 /* Pods-JINS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,10 +613,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = JINS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = JINS/jins_test.h;
@@ -556,16 +624,13 @@
 		};
 		3C904B4320907990005A366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97D0AC4EFBCE089756FF0F4 /* Pods-JINSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JINSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -576,16 +641,13 @@
 		};
 		3C904B4420907990005A366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150848FDBCBAC6E46624019E /* Pods-JINSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JINSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -596,15 +658,12 @@
 		};
 		3C904B4620907990005A366A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E023405D6DBD7AE95F699193 /* Pods-JINSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JINSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -615,15 +674,12 @@
 		};
 		3C904B4720907990005A366A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F138AE63FB1C78C28AA5D00 /* Pods-JINSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JINSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meiji.JINSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

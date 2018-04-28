@@ -9,9 +9,9 @@
 import UIKit
 import Foundation
 import Darwin
+import SocketIO
 
-
-class ViewController: UIViewController, MEMELibDelegate {
+class ViewController: UIViewController, MEMELibDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var accX: UILabel!
     @IBOutlet weak var accY: UILabel!
@@ -33,15 +33,28 @@ class ViewController: UIViewController, MEMELibDelegate {
     
     @IBOutlet weak var powerLeft: UILabel!
     
+    @IBOutlet weak var url_field: UITextField!
+    @IBOutlet weak var submit: UIButton!
+    var manager:SocketManager!
+    var socket:SocketIOClient!
+    var url =  "http://192.168.100.84:8888"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        url_field.placeholder = "URLを入力"
+        url_field.clearButtonMode = .always
+        url_field.returnKeyType = .done
+        manager = SocketManager(socketURL: URL(string: url)!, config: [.log(true), .compress])
+        socket = manager.defaultSocket
         MEMELib.sharedInstance().delegate = self
+       
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+   
     func memeAppAuthorized(_ status: MEMEStatus) {
         MEMELib.sharedInstance().startScanningPeripherals()
         self.checkMEMEStatus(status)
@@ -56,8 +69,15 @@ class ViewController: UIViewController, MEMELibDelegate {
         print(status)
     }
 
+    @IBAction func submit(_ sender: Any) {
+        url = url_field.text!
+        manager = SocketManager(socketURL: URL(string: url)!, config: [.log(true), .compress])
+        socket = manager.defaultSocket
+        url_field.endEditing(true)
+    }
     
     func memeRealTimeModeDataReceived(_ data: MEMERealTimeData!) {
+        
         let row_sensor_data = data.description.components(separatedBy: "{")[1].components(separatedBy: "}")[0].components(separatedBy: ";").map{$0.replacingOccurrences(of:" ", with:"")}
         var sensor_data = Dictionary<String, String>()
         for _datam in row_sensor_data{
@@ -68,8 +88,8 @@ class ViewController: UIViewController, MEMELibDelegate {
                 sensor_data[k] = v
             }
         }
-        print(sensor_data)
-        
+        socket.emit("data", sensor_data)
+        socket.connect()
         accX.text = "accX: " + sensor_data["accX"]!
         accY.text = "accY: " + sensor_data["accY"]!
         accZ.text = "accZ: " + sensor_data["accZ"]!
