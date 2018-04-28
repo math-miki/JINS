@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        MEMELib.setAppClientId("436316200396933", clientSecret: "z14jrx8f4cl86sku4txqgkeg23fes55u")
+        MEMELib.setAppClientId("", clientSecret: "")
         print("Auth Success!!")
         return true
     }
